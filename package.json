@@ -1,0 +1,32 @@
+{
+    "name": "dapp-nodejs-webpack",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "app": "node index.js",
+        "prettier": "prettier --write **/*.sol",
+        "slint": "solhint \"contracts/**/*.sol\"",
+        "test": "truffle test",
+        "coverage": "truffle run coverage",
+        "dev": "webpack --mode development --w",
+        "prod": "webpack --mode production"
+    },
+    "author": "siddhant angore",
+    "license": "ISC",
+    "devDependencies": {
+        "clean-webpack-plugin": "^4.0.0-alpha.0",
+        "electron": "^13.1.5",
+        "eth-gas-reporter": "^0.2.22",
+        "prettier": "^2.3.2",
+        "prettier-plugin-solidity": "^1.0.0-beta.13",
+        "solhint": "^3.3.6",
+        "solidity-coverage": "^0.7.16",
+        "truffle-assertions": "^0.9.2",
+        "webpack": "^5.42.0",
+        "webpack-cli": "^4.7.2"
+    },
+    "dependencies": {
+        "web3": "^1.4.0"
+    }
+}
